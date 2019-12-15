@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29503.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "查看程序集依赖", "查看程序集依赖.csproj", "{ABB25BD0-389F-47B9-92F4-4223EF18DA5E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ABB25BD0-389F-47B9-92F4-4223EF18DA5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABB25BD0-389F-47B9-92F4-4223EF18DA5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABB25BD0-389F-47B9-92F4-4223EF18DA5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABB25BD0-389F-47B9-92F4-4223EF18DA5E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FE3C9D93-2DC8-4FC3-A7D5-F9D31A88A354}
+	EndGlobalSection
+EndGlobal

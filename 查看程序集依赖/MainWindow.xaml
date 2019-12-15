@@ -1,0 +1,45 @@
+﻿<Window
+    x:Class="查看程序集依赖.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:查看程序集依赖"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="MainWindow"
+    Width="800"
+    Height="450"
+    mc:Ignorable="d">
+    <Window.Resources>
+        <local:MainViewModel x:Key="MainViewModel" />
+    </Window.Resources>
+    <Window.DataContext>
+        <StaticResource ResourceKey="MainViewModel" />
+    </Window.DataContext>
+    <DockPanel>
+        <ListBox
+            DockPanel.Dock="Left"
+            IsSynchronizedWithCurrentItem="True"
+            ItemsSource="{Binding Links}"
+            SelectedValue="{Binding Current}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding To.Name}" />
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <ListBox
+            Background="AntiqueWhite"
+            DockPanel.Dock="Left"
+            ItemsSource="{Binding FromNames}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding .}" />
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <ScrollViewer>
+            <Canvas Name="Canvas1" />
+        </ScrollViewer>
+    </DockPanel>
+
+</Window>
